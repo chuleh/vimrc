@@ -50,6 +50,9 @@ set softtabstop=2
 set t_Co=256
 set tabstop=2
 set whichwrap=<,>,[,]
+set cursorline
+
+" molokai
 colorscheme molokai
 
 set listchars=tab:▸▸
