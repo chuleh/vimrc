@@ -19,7 +19,7 @@ Plug 'jreybert/vimagit'
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-syntastic/syntastic'
 Plug 'hashivim/vim-terraform'
-Plug 'ryanoasis/vim-devicons'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 autocmd! bufwritepost init.vim source %
@@ -50,9 +50,6 @@ set softtabstop=2
 set t_Co=256
 set tabstop=2
 set whichwrap=<,>,[,]
-set cursorline
-
-" molokai
 colorscheme molokai
 
 set listchars=tab:▸▸
