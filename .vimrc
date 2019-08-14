@@ -20,10 +20,12 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'vim-syntastic/syntastic'
 Plug 'hashivim/vim-terraform'
 Plug 'Yggdroot/indentLine'
+Plug 'luochen1990/rainbow'
 call plug#end()
 
 autocmd! bufwritepost init.vim source %
 
+let g:rainbow_active = 1
 set encoding=UTF-8
 set linebreak
 set guioptions= "removes both scrollbars"
