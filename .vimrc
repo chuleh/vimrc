@@ -69,7 +69,7 @@ colorscheme gruvbox
 set listchars=tab:▸▸
 
 " FZF
-map <c-p> :Files <CR>
+map <C-f> :Files <CR>
 "
 
 let g:lightline = {
@@ -81,12 +81,18 @@ filetype plugin indent on
 syntax on
 let leader = ','
 
+" keybinds
 map <C-TAB> :tabnext <CR>
 map <C-S-TAB> :tabprevious <CR>
-map <c-t> :tabnew <CR>
-map <c-w> :tabclose <CR>
-map <C-n> :NERDTreeToggle<CR>
-nnoremap Q <nop>
+map <C-t> :tabnew <CR>
+map <C-w> :tabclose <CR>
+map <C-n> :NERDTreeToggle <CR>
+map <C-s> :Gstatus <CR>
+map <C-b> :Gblame <CR>
+map <C-a> :Gwrite <CR>
+map <C-m> :Gcommit <CR>
+map <C-l> :Gpull <CR>
+map <C-p> :Gpush <CR>
 autocmd BufWritePre * :%s/\s\+$//e
 
 " movement
