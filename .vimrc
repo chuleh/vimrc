@@ -35,7 +35,6 @@ let g:airline_theme='base16'
 set lines=999
 set columns=999
 
-set guifont=DroidSansMono\ Nerd\ Font:h11
 set hlsearch
 set encoding=UTF-8
 set linebreak
