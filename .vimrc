@@ -27,6 +27,10 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
+"nerdtree always open"
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
+
 autocmd! bufwritepost init.vim source %
 
 let g:rainbow_active = 1
@@ -35,6 +39,7 @@ let g:airline_theme='base16'
 set lines=999
 set columns=999
 
+set guifont=DroidSansMono\ Nerd\ Font:h11
 set hlsearch
 set encoding=UTF-8
 set linebreak
@@ -242,3 +247,10 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>"
+
+" Use fontawesome icons as signs
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = '>'
+let g:gitgutter_sign_removed = '-'
+let g:gitgutter_sign_removed_first_line = '^'
+let g:gitgutter_sign_modified_removed = '<'
