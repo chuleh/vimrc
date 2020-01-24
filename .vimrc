@@ -1,4 +1,6 @@
 call plug#begin('~/.vim/plugged')
+Plug 'wadackel/vim-dogrun'
+Plug 'fatih/molokai'
 Plug 'ap/vim-css-color'
 Plug 'chriskempson/base16-vim'
 Plug 'danro/rename.vim'
@@ -10,7 +12,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'mhinz/vim-startify'
-Plug 'scrooloose/nerdcommenter'
 Plug 'vim-ruby/vim-ruby'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
@@ -27,9 +28,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
-"nerdtree always open"
-autocmd VimEnter * NERDTree
-autocmd BufEnter * NERDTreeMirror
+"map leader to spacebar"
+let mapleader=" "
 
 autocmd! bufwritepost init.vim source %
 
@@ -38,7 +38,6 @@ let g:airline_theme='base16'
 
 set lines=999
 set columns=999
-
 set guifont=DroidSansMono\ Nerd\ Font:h11
 set hlsearch
 set encoding=UTF-8
@@ -54,7 +53,7 @@ set encoding=utf-8
 set expandtab
 set fileencodings=utf-8
 set laststatus=2
-set iskeyword-=_
+set iskeyword=_
 set list
 set noshowmode
 set nowrap
@@ -67,10 +66,10 @@ set softtabstop=2
 set t_Co=256
 set tabstop=2
 set whichwrap=<,>,[,]
-""colorscheme molokai
-colorscheme gruvbox
-
 set listchars=tab:▸▸
+set noswapfile
+
+colorscheme dogrun
 
 " FZF
 map <C-f> :Files <CR>
