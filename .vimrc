@@ -69,7 +69,7 @@ set whichwrap=<,>,[,]
 set listchars=tab:▸▸
 set noswapfile
 
-colorscheme dogrun
+colorscheme gruvbox
 
 " FZF
 map <C-f> :Files <CR>
@@ -110,8 +110,8 @@ set foldlevel=99
 nnoremap <space> za
 
 " open close
-inoremap " ""<left>
-inoremap ' ''<left>
+"inoremap " ""<left>
+"inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
